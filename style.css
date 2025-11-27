@@ -1,1 +1,181 @@
+/* Google Font */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f5f5f5;
+}
+
+/* Navbar */
+#navbar {
+  background: black;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 0;
+}
+
+#navbar a {
+  color: gold;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#navbar a:hover {
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  height: 80vh;
+  background: url('banner.jpg') center/cover no-repeat;
+  position: relative;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid gold;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  background: gold;
+  color: black;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.btn:hover {
+  background: white;
+}
+
+/* Sections */
+.section {
+  padding: 60px 12%;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+/* Skills */
+.skill {
+  margin: 15px auto;
+  max-width: 500px;
+}
+
+.skill-bar {
+  width: 100%;
+  background: #ddd;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill-bar span {
+  display: block;
+  height: 100%;
+  background: gold;
+}
+
+/* Projects */
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.project {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* Icons (Contact Section) */
+.icon-btn {
+  color: gold;
+  font-size: 35px;
+  padding: 15px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.icon-btn:hover {
+  color: white;
+  background: gold;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 450px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.contact-form button {
+  background: gold;
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: black;
+  color: white;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: black;
+  color: gold;
+  margin-top: 40px;
+}
 
